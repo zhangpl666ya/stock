@@ -1,8 +1,8 @@
 #include<stdio.h>
-/*¸øÒ»¸öÊı×énumºÍÒ»¸öÖµval£¬ÒªÒÆ³ınumÖĞµÈÓÚvalµÄÔªËØ£¬²¢½«²»µÈÓÚvalµÄk¸öÔªËØÒÆµ½Ç°Ãæ
-Ë³Ğò¿ÉÄÜ·¢Éú¸Ä±ä£¬µ«²»±Ø¹ÜËû£¬ÄúĞèÒªÊä³ökµÄÖµ*/
+/*ç»™ä¸€ä¸ªæ•°ç»„numå’Œä¸€ä¸ªå€¼valï¼Œè¦ç§»é™¤numä¸­ç­‰äºvalçš„å…ƒç´ ï¼Œå¹¶å°†ä¸ç­‰äºvalçš„kä¸ªå…ƒç´ ç§»åˆ°å‰é¢
+é¡ºåºå¯èƒ½å‘ç”Ÿæ”¹å˜ï¼Œä½†ä¸å¿…ç®¡ä»–ï¼Œæ‚¨éœ€è¦è¾“å‡ºkçš„å€¼*/
 
-//ÎÒ×Ô¼ºĞ´µÄ 9.46MB Ê±¼ä¸´ÔÓ¶ÈÎªn
+//æˆ‘è‡ªå·±å†™çš„ 9.46MB æ—¶é—´å¤æ‚åº¦ä¸ºn
 int removeElement(int* nums, int numsSize, int val) {
 	int p = numsSize - 1;
 	int mem = p;
@@ -22,7 +22,7 @@ int removeElement(int* nums, int numsSize, int val) {
 	return mem - p;
 }
 
-//ÍøÓÑµÄ Ê±¼ä¸´ÔÓ¶Èn ¿Õ¼ä¸´ÔÓ¶È1
+//ç½‘å‹çš„ æ—¶é—´å¤æ‚åº¦n ç©ºé—´å¤æ‚åº¦1
 int removeElement1(int* nums, int numsSize, int val) {
 	int slow = 0, fast = 0;
 	for (; fast < numsSize;fast++) {
